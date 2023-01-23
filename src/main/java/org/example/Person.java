@@ -34,7 +34,7 @@ public class Person {
      siblings.add(sibling);
     }
 
-    public List<Person> addGrandChildren(){
+    public List<Person> addGrandChildren(Person grandChildren1){
         ArrayList<Person> grandChildren = new ArrayList<>();
        for (Person child : children) {
            for (Person grandChild : child.getChildren()){
@@ -151,4 +151,6 @@ public class Person {
     public void setPets(List<Pet> pets) {
         this.pets = pets;
     }
+
+
 }
